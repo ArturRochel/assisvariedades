@@ -44,6 +44,10 @@
 }
 
 .link {
+  height: 280px;
+}
+
+.link {
   color: black;
   display: flex;
   flex-direction: column;
@@ -53,6 +57,7 @@
   background-color: rgba(255, 255, 255, 0.719);
   border-radius: 8px;
   transition: 0.2s;
+  margin-bottom: 10px;
 }
 
 .link:hover {
@@ -77,6 +82,7 @@
   background-color: #f7c740;
   width: max-content;
   transition: 0.3s;
+  margin-bottom: 10px;
 }
 
 .catalogo:hover {
