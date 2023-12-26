@@ -18,7 +18,7 @@
 
 .institucional {
   display: flex;
-  gap: 10px;
+  gap: 20px;
   flex-direction: column;
   height: 164px;
 }
@@ -28,11 +28,11 @@
   flex-direction: column;
   flex-wrap: wrap;
   flex: 1;
-  gap: 10px;
+  gap: 15px;
 }
 
 .institucional li {
-  transition: 0.2s;
+  transition: 0.3s;
 }
 
 .institucional li:hover {
@@ -43,15 +43,9 @@
 
 .pix {
   display: flex;
+  gap: 20px;
   flex-direction: column;
-  flex-wrap: wrap;
-  flex: 1;
-  gap: 10px;
   height: 164px;
-}
-
-.pix h2 {
-  align-content: start;
 }
 
 .pix ul {
@@ -59,7 +53,7 @@
   flex-direction: column;
   flex-wrap: wrap;
   flex: 1;
-  gap: 10px;
+  gap: 15px;
 }
 
 .caixa h2 {
@@ -76,6 +70,16 @@
   height: 164px;
 }
 
+.contatos a {
+  transition: 0.3s;
+}
+
+.contatos a:hover {
+  color: black;
+  transform: scale(1.015);
+  text-shadow: 0.2px 0.2px 0.5px #f8e21c;
+}
+
 .artur {
   display: grid;
   justify-content: center;
@@ -83,7 +87,12 @@
   padding-bottom: 40px;
 }
 
+.artur a {
+  padding: 10px;
+}
+
 .artur img {
+  margin: 0 auto;
   border-radius: 10px;
   width: 140px;
 }
