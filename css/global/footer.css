@@ -1,0 +1,31 @@
+.footer {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 40px 60px;
+  gap: 150px;
+  background-color: #f7f7f7;
+  align-items: center;
+}
+
+.footer-logo img {
+  width: 300px;
+  border-radius: 10px;
+}
+
+.institucional {
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+}
+
+.institucional ul {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  flex: 1;
+  gap: 10px;
+}
+
+.caixa img {
+  width: 200px;
+}
