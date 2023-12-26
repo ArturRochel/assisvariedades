@@ -1,0 +1,23 @@
+.embalagens-bg {
+  width: 1400px;
+  margin: 0 auto;
+  background-color: #ccc;
+}
+
+.embalagens {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  padding: 20px 40px;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+}
+
+.embalagens h1 {
+  grid-column: 1/ -1;
+  text-align: center;
+}
+
+.embalagens-item {
+  text-align: center;
+}

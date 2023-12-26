@@ -4,6 +4,7 @@
 
 /* HOME */
 @import "./home/introducao.css";
+@import "./home/embalagens.css";
 
 /* UTILIDADES */
 @import "./utilidades/tipografia.css";
