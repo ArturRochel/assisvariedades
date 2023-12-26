@@ -40,17 +40,17 @@
 
 .introducao-item {
   display: flex;
+  flex-wrap: wrap;
+  flex: 1;
   justify-content: center;
   gap: 20px;
 }
 
 .link {
-  height: 280px;
-}
-
-.link {
   color: black;
   display: flex;
+  flex-wrap: wrap;
+  flex: 1;
   flex-direction: column;
   align-items: center;
   gap: 20px;
@@ -111,7 +111,29 @@
 }
 
 @media (max-width: 800px) {
+  .introducao h1 {
+    font-size: 2.5rem;
+  }
+  .introducao p {
+    width: 45ch;
+  }
   .introducao-item {
     gap: 10px;
+  }
+  .link span {
+    font-size: 1.15rem;
+  }
+  .link img {
+    width: 200px;
+  }
+}
+
+@media (max-width: 600px) {
+  .introducao h1 {
+    font-size: 2rem;
+  }
+  .introducao p {
+    font-size: 1.25rem;
+    width: 35ch;
   }
 }
