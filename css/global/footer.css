@@ -7,6 +7,10 @@
   align-items: center;
 }
 
+.footer-logo {
+  margin-left: 20px;
+}
+
 .footer-logo img {
   width: 300px;
   border-radius: 10px;
@@ -26,6 +30,33 @@
   gap: 10px;
 }
 
+.pix {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  flex: 1;
+  gap: 10px;
+  height: 164px;
+}
+
+.pix h2 {
+  align-content: start;
+}
+
+.pix ul {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  flex: 1;
+  gap: 10px;
+}
+
 .caixa img {
-  width: 200px;
+  width: 150px;
+}
+
+.contatos {
+  display: grid;
+  margin-right: 20px;
+  height: 164px;
 }
