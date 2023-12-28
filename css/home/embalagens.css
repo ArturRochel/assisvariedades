@@ -33,11 +33,12 @@
   text-align: center;
   border: 2px solid black;
   transition: 0.2s;
+  box-shadow: 3px 3px 5px #390909;
 }
 
 .embalagens-item:hover {
   transform: scale(1.025);
-  box-shadow: 0px 2px 5px black;
+  box-shadow: 3px 2px 5px #333;
 }
 
 .embalagens-item img {
