@@ -24,10 +24,13 @@
   height: 4px;
   background: #1c1c1c;
   margin: 6px;
+  position: relative;
+  transition: transform 0.3s;
 }
 
 .header-responsivo {
   display: none;
+  width: 0%;
 }
 
 .header-res {
@@ -37,6 +40,8 @@
   text-shadow: 0px 1px 0px #ffee66;
   background: linear-gradient(#ffec64, #ffab23);
   font-size: 1.4rem;
+  width: 120px;
+  text-align: center;
 }
 
 .icones {
@@ -45,10 +50,12 @@
 
 .redes {
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   flex: 1;
   gap: 10px;
   font-size: 2rem;
+  text-align: center;
+  align-items: center;
 }
 
 .header-item {
@@ -132,21 +139,43 @@
     width: 120px;
   }
   .header-responsivo {
+    overflow: hidden;
+    visibility: hidden;
     display: flex;
     flex-direction: column;
+    padding: 20px 0px;
     gap: 40px;
-    padding: 20px 10px;
     position: absolute;
-    width: 20vh;
+    width: 0vh;
     height: 100vh;
     right: 0px;
     z-index: 5;
-    background-color: #f7f7f7;
+    background-color: white;
     align-items: center;
-    transform: translateX(100%);
     transition: 0.3s;
   }
+
   .header-responsivo.active {
-    transform: translateX(0);
+    visibility: visible;
+    width: 25vh;
+  }
+
+  .hamburguer.active {
+    background-color: #e1e1e1;
+    border-radius: 8px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.2);
+  }
+
+  .hamburguer.active .line1 {
+    opacity: 0;
+  }
+
+  .hamburguer.active .line2 {
+    transform: rotate(135deg);
+  }
+
+  .hamburguer.active .line3 {
+    transform: rotate(-135deg);
+    top: -9px;
   }
 }
