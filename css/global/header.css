@@ -26,6 +26,19 @@
   margin: 6px;
 }
 
+.header-responsivo {
+  display: none;
+}
+
+.header-res {
+  border: 1px #ffaa22;
+  border-radius: 4px;
+  box-shadow: 0px 1px 0px 0px #fff6af;
+  text-shadow: 0px 1px 0px #ffee66;
+  background: linear-gradient(#ffec64, #ffab23);
+  font-size: 1.4rem;
+}
+
 .icones {
   color: #111;
 }
