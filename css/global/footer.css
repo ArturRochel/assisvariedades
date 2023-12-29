@@ -1,6 +1,6 @@
 .footer {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   padding: 40px 60px;
   gap: 150px;
   background-color: #f7f7f7;
@@ -13,6 +13,7 @@
 }
 
 .footer-logo img {
+  display: block;
   width: 300px;
   border-radius: 10px;
 }
@@ -57,11 +58,16 @@
   gap: 15px;
 }
 
+.caixa {
+  justify-self: center;
+}
+
 .caixa h2 {
   text-align: center;
 }
 
 .caixa img {
+  display: block;
   width: 150px;
 }
 
@@ -85,6 +91,7 @@
   display: grid;
   justify-content: center;
   background-color: #f7f7f7;
+  padding-top: 80px;
   padding-bottom: 40px;
 }
 
@@ -96,4 +103,7 @@
   margin: 0 auto;
   border-radius: 10px;
   width: 140px;
+}
+
+@media (max-width: 1400px) {
 }
