@@ -1,0 +1,18 @@
+.descartaveis {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  width: 1400px;
+  margin: 0 auto;
+}
+
+.descartaveis::before {
+  display: block;
+  position: relative;
+  content: "";
+  height: 5px;
+  background: blue;
+  top: -5px;
+}
+.descartaveis h1 {
+  grid-column: 1/ -1;
+}
