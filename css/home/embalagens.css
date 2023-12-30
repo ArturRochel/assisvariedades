@@ -35,7 +35,6 @@
   border: 2px solid black;
   transition: 0.2s;
   box-shadow: 3px 3px 5px #390909;
-  width: 190px;
   box-sizing: border-box;
 }
 
@@ -60,5 +59,8 @@
   }
   .embalagens-itens {
     grid-template-columns: 1fr 1fr;
+  }
+  .embalagens-item {
+    width: 190px;
   }
 }
