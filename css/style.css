@@ -6,6 +6,9 @@
 @import "./home/introducao.css";
 @import "./home/embalagens.css";
 
+/* PRODUTOS */
+@import "./produtos/produtos.css";
+
 /* UTILIDADES */
 @import "./utilidades/tipografia.css";
 @import "./utilidades/utilitario.css";

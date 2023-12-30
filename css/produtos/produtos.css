@@ -1,0 +1,44 @@
+.produtos-bg {
+  display: grid;
+  width: 1400px;
+  background-color: #f7f7f7;
+  margin: 0 auto;
+  padding: 20px;
+  gap: 10px;
+  box-shadow: 1px 1px 5px #111;
+  border-radius: 8px;
+}
+
+.produtos-bg h1 {
+  margin-left: 20px;
+  text-shadow: 1px 2px 5px #ccc;
+}
+
+.produtos {
+  display: flex;
+  flex-wrap: wrap;
+  flex: 1;
+  gap: 40px;
+  padding: 30px 20px;
+  border-radius: 4px;
+  /* box-shadow: 1px 1px 5px #c5c7c1; */
+}
+
+.produtos-itens {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  box-shadow: 1px 1px 5px #c5c7c1;
+  transition: 0.3s;
+}
+
+.produtos-itens img {
+  width: 64px;
+}
+
+.produtos-itens:hover {
+  transform: scale(1.05);
+}
