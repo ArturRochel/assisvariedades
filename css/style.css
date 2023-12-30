@@ -8,6 +8,7 @@
 
 /* PRODUTOS */
 @import "./produtos/produtos.css";
+@import "./produtos/descartaveis.css";
 
 /* UTILIDADES */
 @import "./utilidades/tipografia.css";
