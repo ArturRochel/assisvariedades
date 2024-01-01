@@ -10,6 +10,7 @@
 @import "./produtos/produtos.css";
 @import "./produtos/descartaveis.css";
 @import "./produtos/supermercado.css";
+@import "./produtos/sacolas.css";
 
 /* UTILIDADES */
 @import "./utilidades/tipografia.css";
