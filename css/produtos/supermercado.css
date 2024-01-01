@@ -1,9 +1,9 @@
-.descartaveis-bg {
+.supermercado-bg {
   width: 1400px;
   margin: 0 auto;
   margin-bottom: 80px;
 }
-.descartaveis {
+.supermercado {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   gap: 20px;
@@ -15,7 +15,7 @@
   text-align: center;
 }
 
-.descartaveis::before {
+.supermercado::before {
   display: block;
   position: absolute;
   content: "";
@@ -26,14 +26,14 @@
   left: 0px;
   border-radius: 4px;
 }
-.descartaveis h1 {
+.supermercado h1 {
   grid-column: 1/ -1;
   text-align: left;
   margin-left: 10px;
   margin-bottom: 20px;
 }
 
-.descartaveis-itens {
+.supermercado-itens {
   justify-self: center;
   padding: 16px;
   width: 250px;
@@ -41,7 +41,7 @@
   border-radius: 4px;
 }
 
-.descartaveis-itens img {
+.supermercado-itens img {
   margin-bottom: 10px;
   border-radius: 4px;
 }
