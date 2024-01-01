@@ -37,8 +37,9 @@
   justify-self: center;
   padding: 16px;
   width: 250px;
-  background-color: #474444;
+  background-color: #f7f7f7;
   border-radius: 4px;
+  box-shadow: 2px 4px 5px #111;
 }
 
 .supermercado-itens img {
