@@ -1,6 +1,8 @@
 .produtos-bg {
-  display: grid;
-  width: 1400px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  max-width: 1200px;
   background-color: #f7f7f7;
   margin: 0 auto;
   padding: 20px;
@@ -21,12 +23,14 @@
   flex-direction: row;
   flex: 1;
   gap: 20px;
+  justify-content: space-around;
 }
 
 .produtos-itens {
   display: flex;
   flex-direction: column;
   gap: 18px;
+  width: 165px;
   padding: 20px;
   border: 1px solid #ccc;
   border-radius: 6px;
