@@ -49,4 +49,5 @@
   transform: scale(1.05);
   color: #ffde23;
   text-shadow: 1px 1px 2px black;
+  box-shadow: 2px 5px 6px #bbbbbb;
 }
