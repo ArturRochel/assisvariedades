@@ -21,7 +21,7 @@
 @media (max-width: 600px) {
   .whatsapp {
     width: 50px;
-    left: 30px;
+    left: 20px;
     bottom: 70px;
   }
   .whatsapp:hover img {

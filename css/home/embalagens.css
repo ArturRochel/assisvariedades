@@ -1,21 +1,27 @@
+.embalagens-bg {
+  max-width: 1200px;
+  margin: 0 auto;
+}
 .embalagens {
   display: grid;
-  padding: 20px 40px;
+  padding: 0px 0px;
   gap: 20px;
-  margin: 0 auto;
-  width: 1400px;
-  margin: 0px auto;
   align-items: center;
   justify-content: center;
   margin-bottom: 40px;
 }
 
-.embalagens h1 {
-  text-align: center;
-  margin-top: 10px;
+.embalagens-tittle {
+  width: 100%;
+  margin: 0 auto;
   border: 2px solid black;
   border-radius: 8px;
   background-color: #fffdcc;
+  margin-top: 10px;
+}
+.embalagens h1 {
+  text-align: center;
+  padding: 0px;
   color: black;
   text-shadow: 3px 3px 5px #ccc;
 }
@@ -47,20 +53,43 @@
   border-radius: 4px 4px 0px 0px;
 }
 
-@media (max-width: 1400px) {
-  .embalagens {
-    width: auto;
-  }
-}
-
 @media (max-width: 850px) {
   .embalagens h1 {
-    font-size: 3rem;
+    font-size: 2.5rem;
   }
   .embalagens-itens {
     grid-template-columns: 1fr 1fr;
   }
   .embalagens-item {
     width: 190px;
+  }
+}
+
+@media (max-width: 600px) {
+  .embalagens-tittle {
+    width: 80%;
+  }
+  .embalagens-bg {
+    max-width: 200px;
+  }
+  .embalagens-itens {
+    padding: 0px;
+    gap: 10px;
+  }
+
+  .embalagens-item {
+    padding: 10px 0px;
+  }
+  .embalagens-item a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .embalagens a span {
+    font-size: 1rem;
+  }
+  .embalagens-item img {
+    width: 100px;
+    justify-content: center;
   }
 }
