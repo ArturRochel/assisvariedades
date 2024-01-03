@@ -12,6 +12,7 @@
 @import "./produtos/supermercado.css";
 @import "./produtos/sacolas.css";
 @import "./produtos/embala.css";
+@import "./produtos/guloseimas.css";
 
 /* UTILIDADES */
 @import "./utilidades/tipografia.css";
