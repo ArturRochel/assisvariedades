@@ -34,6 +34,8 @@
 }
 
 .embalagens-item {
+  display: grid;
+  gap: 10px;
   background-color: white;
   padding: 20px 15px;
   border-radius: 4px;
@@ -42,6 +44,8 @@
   transition: 0.2s;
   box-shadow: 3px 3px 5px #390909;
   box-sizing: border-box;
+  justify-content: center;
+  align-items: center;
 }
 
 .embalagens-item:hover {

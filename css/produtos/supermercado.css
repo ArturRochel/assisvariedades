@@ -6,7 +6,7 @@
 .supermercado {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  gap: 20px;
+  gap: 40px;
   max-width: 1200px;
   margin: 0 auto;
   position: relative;
@@ -37,26 +37,24 @@
 .supermercado-itens {
   display: flex;
   flex-direction: column;
-  padding: 16px;
-  max-width: 250px;
-  max-height: 300px;
+  gap: 20px;
   background-color: #f7f7f7;
+  padding: 16px;
   border-radius: 4px;
   box-shadow: 2px 4px 5px #c1c1c1;
   justify-content: center;
   align-items: center;
   text-align: center;
+  width: 285px;
+  height: 315px;
 }
 
 .supermercado-itens img {
-  margin-bottom: 10px;
   border-radius: 4px;
 }
 
-.italac {
-  display: grid;
-  justify-content: center;
-  width: 250px;
+.control img {
+  max-height: 250px;
 }
 
 @media (max-width: 1000px) {

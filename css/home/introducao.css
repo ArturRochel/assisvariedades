@@ -46,6 +46,11 @@
   gap: 20px;
 }
 
+.item {
+  width: 330px;
+  height: 335px;
+}
+
 .link {
   color: black;
   display: flex;
@@ -64,10 +69,6 @@
 .link:hover {
   transform: scale(1.025);
   box-shadow: 0px 2px 5px black;
-}
-
-.link img {
-  width: 300px;
 }
 
 .link span {
