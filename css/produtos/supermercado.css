@@ -42,7 +42,7 @@
   padding: 16px;
   border-radius: 4px;
   box-shadow: 2px 4px 5px #c1c1c1;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
   text-align: center;
   width: 285px;
@@ -51,10 +51,11 @@
 
 .supermercado-itens img {
   border-radius: 4px;
+  max-height: 240px;
 }
 
 .control img {
-  max-height: 250px;
+  max-height: 240px;
 }
 
 @media (max-width: 1000px) {
@@ -67,5 +68,21 @@
   .supermercado {
     grid-template-columns: 1fr 1fr;
     gap: 10px;
+  }
+  .supermercado-itens {
+    width: 190px;
+    height: 210px;
+    padding: 10px;
+    gap: 10px;
+  }
+  .supermercado-itens img {
+    max-width: 140px;
+    max-height: 160px;
+  }
+  .control img {
+    height: 140px;
+  }
+  .supermercado-itens span {
+    font-size: 1rem;
   }
 }

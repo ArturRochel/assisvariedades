@@ -8,11 +8,11 @@
   grid-template-columns: 1fr 1fr 1fr 1fr;
   gap: 20px;
   max-width: 1200px;
-  margin: 0 auto;
   position: relative;
   justify-content: center;
   align-items: center;
   text-align: center;
+  margin: 0 auto;
 }
 
 .descartaveis::before {
@@ -23,7 +23,7 @@
   height: 5px;
   background: #474444;
   top: -15px;
-  left: 0px;
+  left: -40px;
   border-radius: 4px;
 }
 .descartaveis h1 {
@@ -35,21 +35,27 @@
 }
 
 .descartaveis-itens {
-  display: grid;
-  justify-self: center;
-  justify-content: center;
-  text-align: center;
-  padding: 16px;
-  max-width: 250px;
-  max-height: 300px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
   background-color: #f7f7f7;
+  padding: 16px;
   border-radius: 4px;
   box-shadow: 2px 4px 5px #c1c1c1;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 285px;
+  height: 315px;
 }
 
 .descartaveis-itens img {
-  margin-bottom: 10px;
   border-radius: 4px;
+  max-height: 240px;
+}
+
+.control img {
+  max-height: 240px;
 }
 
 @media (max-width: 1000px) {
@@ -62,5 +68,18 @@
   .descartaveis {
     grid-template-columns: 1fr 1fr;
     gap: 10px;
+  }
+  .descartaveis-itens {
+    width: 190px;
+    height: 210px;
+    padding: 10px;
+    gap: 10px;
+  }
+  .descartaveis-itens img {
+    max-width: 140px;
+    max-height: 160px;
+  }
+  .descartaveis-itens span {
+    font-size: 1rem;
   }
 }
