@@ -1,3 +1,24 @@
+// Animações
+const target = document.querySelectorAll("[data-anime]");
+const ativar = "animado";
+
+function animar() {
+  const scrollY = window.scrollY + (window.innerHeight * 3) / 4;
+  target.forEach(function (e) {
+    if (scrollY > e.offsetTop) {
+      e.classList.add(ativar);
+    } else {
+      e.classList.remove(ativar);
+    }
+  });
+}
+
+animar();
+
+if (target.length) {
+  window.addEventListener("scroll", animar);
+}
+
 // Menu Hamburguer
 const hamburguer = document.getElementById("hamburguer");
 
@@ -14,24 +35,3 @@ function toggleMenu() {
 }
 
 hamburguer.addEventListener("click", toggleMenu);
-
-// Animações
-const target = document.querySelectorAll("[data-anime]");
-const animationClass = "animado";
-
-function animando() {
-  const scrollY = window.scrollY + (window.innerHeight * 3) / 4;
-  target.forEach(function (e) {
-    if (scrollY > e.offsetTop) {
-      e.classList.add(animationClass);
-    } else {
-      e.classList.remove(animationClass);
-    }
-  });
-}
-
-animando();
-
-if (target.length) {
-  window.addEventListener("scroll", animando);
-}

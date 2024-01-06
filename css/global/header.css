@@ -49,6 +49,11 @@
   padding: 4px;
 }
 
+.header-res a {
+  width: 120px;
+  box-sizing: border-box;
+}
+
 .redes {
   display: flex;
   flex-wrap: nowrap;
@@ -96,10 +101,12 @@
   transition: 0.3s;
 }
 
-.botao {
+.botao a {
   padding: 8px 12px;
   border-radius: 6px;
+  width: 150px;
   transition: 0.3s;
+  box-sizing: border-box;
 }
 
 @media (max-width: 1200px) {
@@ -170,7 +177,7 @@
   }
 
   .header-responsivo.active {
-    visibility: visible;
+    visibility: visible !important;
     width: 25vh;
   }
 
