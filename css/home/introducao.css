@@ -46,9 +46,13 @@
   gap: 20px;
 }
 
-.item {
+.item a {
   width: 330px;
   height: 335px;
+}
+
+.item img {
+  max-height: 220px;
 }
 
 .link {
@@ -58,6 +62,8 @@
   flex: 1;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
+  text-align: center;
   gap: 20px;
   padding: 20px 15px;
   background-color: rgba(255, 255, 255, 0.719);
@@ -127,8 +133,12 @@
   .link span {
     font-size: 1.15rem;
   }
-  .link img {
-    width: 200px;
+  .item a {
+    width: 300px;
+    height: 305px;
+  }
+  .item img {
+    max-height: 180px;
   }
 }
 

@@ -31,21 +31,23 @@
   grid-template-columns: 1fr 1fr 1fr 1fr;
   padding: 20px;
   gap: 20px;
+  margin-bottom: 30px;
 }
 
 .embalagens-item {
   display: grid;
-  gap: 10px;
   background-color: white;
   padding: 20px 15px;
   border-radius: 4px;
-  text-align: center;
   border: 2px solid black;
   transition: 0.2s;
   box-shadow: 3px 3px 5px #390909;
   box-sizing: border-box;
   justify-content: center;
   align-items: center;
+  text-align: center;
+  max-width: 275px;
+  max-height: 335px;
 }
 
 .embalagens-item:hover {
@@ -55,6 +57,8 @@
 
 .embalagens-item img {
   border-radius: 4px 4px 0px 0px;
+  margin-bottom: 10px;
+  max-height: 240px;
 }
 
 @media (max-width: 850px) {
@@ -66,6 +70,9 @@
   }
   .embalagens-item {
     width: 190px;
+  }
+  .embalagens-item img {
+    max-height: 200px;
   }
 }
 
@@ -93,7 +100,7 @@
     font-size: 1rem;
   }
   .embalagens-item img {
-    width: 100px;
+    max-height: 150px;
     justify-content: center;
   }
 }
