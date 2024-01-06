@@ -6,7 +6,7 @@
 .descartaveis {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  gap: 20px;
+  gap: 40px;
   max-width: 1200px;
   position: relative;
   justify-content: center;
@@ -47,6 +47,7 @@
   text-align: center;
   width: 285px;
   height: 315px;
+  margin: 0 auto;
 }
 
 .descartaveis-itens img {
@@ -67,7 +68,7 @@
 @media (max-width: 600px) {
   .descartaveis {
     grid-template-columns: 1fr 1fr;
-    gap: 10px;
+    gap: 15px;
   }
   .descartaveis-itens {
     width: 190px;

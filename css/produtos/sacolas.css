@@ -47,6 +47,7 @@
   text-align: center;
   width: 285px;
   height: 315px;
+  margin: 0 auto;
 }
 
 .sacolas-itens img {
@@ -67,7 +68,7 @@
 @media (max-width: 600px) {
   .sacolas {
     grid-template-columns: 1fr 1fr;
-    gap: 10px;
+    gap: 15px;
   }
   .sacolas-itens {
     width: 190px;

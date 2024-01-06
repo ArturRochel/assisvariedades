@@ -2,6 +2,9 @@
   max-width: 1400px;
   margin: 0 auto;
   margin-bottom: 80px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 .supermercado {
   display: grid;
@@ -47,6 +50,7 @@
   text-align: center;
   width: 285px;
   height: 315px;
+  margin: 0 auto;
 }
 
 .supermercado-itens img {
@@ -67,7 +71,7 @@
 @media (max-width: 600px) {
   .supermercado {
     grid-template-columns: 1fr 1fr;
-    gap: 10px;
+    gap: 15px;
   }
   .supermercado-itens {
     width: 190px;
