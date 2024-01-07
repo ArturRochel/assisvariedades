@@ -1,0 +1,51 @@
+.titulo-bg {
+  background-color: #111;
+  color: #fff;
+  padding: 40px;
+}
+
+.titulo {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  flex: 1;
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.contato-bg {
+  background-color: #111;
+  /* box-shadow: inset 0px -50px 0px yellow; */
+  margin: 0 auto;
+  height: 1200px;
+}
+
+.contato {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+  background-color: red;
+}
+
+.contato-item {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  flex: 1;
+  gap: 20px;
+  padding: 60px;
+}
+
+.contato-user {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.contato-item a {
+  display: block;
+  width: max-content;
+  padding: 10px;
+}

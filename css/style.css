@@ -2,6 +2,10 @@
 @import "./global/header.css";
 @import "./global/footer.css";
 
+/* UTILIDADES */
+@import "./utilidades/tipografia.css";
+@import "./utilidades/utilitario.css";
+
 /* HOME */
 @import "./home/introducao.css";
 @import "./home/embalagens.css";
@@ -14,6 +18,5 @@
 @import "./produtos/embala.css";
 @import "./produtos/guloseimas.css";
 
-/* UTILIDADES */
-@import "./utilidades/tipografia.css";
-@import "./utilidades/utilitario.css";
+/* CONTATOS */
+@import "./contatos/contato.css";
