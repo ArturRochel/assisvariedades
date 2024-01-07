@@ -1,5 +1,15 @@
 .header-bg {
   width: 100%;
+  animation: show 0.8s forwards;
+}
+
+@keyframes show {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 .header {
