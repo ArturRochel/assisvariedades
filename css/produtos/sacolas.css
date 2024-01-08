@@ -1,18 +1,20 @@
 .sacolas-bg {
+  display: grid;
   max-width: 1400px;
   margin: 0 auto;
   margin-bottom: 80px;
+  justify-content: center;
 }
 .sacolas {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   gap: 40px;
   max-width: 1200px;
-  margin: 0 auto;
   position: relative;
   justify-content: center;
   align-items: center;
   text-align: center;
+  box-sizing: border-box;
 }
 
 .sacolas::before {
@@ -42,12 +44,13 @@
   padding: 16px;
   border-radius: 4px;
   box-shadow: 2px 4px 5px #c1c1c1;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
   text-align: center;
-  width: 285px;
+  width: 270px;
   height: 315px;
   margin: 0 auto;
+  box-sizing: border-box;
 }
 
 .sacolas-itens img {
@@ -82,5 +85,11 @@
   }
   .sacolas-itens span {
     font-size: 1rem;
+  }
+}
+
+@media (max-width: 400px) {
+  .sacolas-itens {
+    width: 140px;
   }
 }

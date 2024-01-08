@@ -1,0 +1,45 @@
+.historia-bg {
+  background-color: #f7f7f7;
+  padding: 40px 0px 80px 0px;
+  max-width: 1400px;
+  margin: 0 auto;
+  border-radius: 8px;
+  box-shadow: 4px 4px 10px black;
+  margin-bottom: 100px;
+}
+
+.titulo {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  flex: 1;
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  margin-bottom: 40px;
+  animation: mostrar 0.8s forwards;
+}
+
+@keyframes mostrar {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.historia {
+  padding: 40px;
+  color: #111;
+}
+
+.historia-text {
+  max-width: 150ch;
+  padding: 0px 40px;
+  text-align: justify;
+}
+
+.historia-text span {
+  visibility: hidden;
+}

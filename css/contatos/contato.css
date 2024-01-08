@@ -12,6 +12,16 @@
   gap: 20px;
   max-width: 1200px;
   margin: 0 auto;
+  animation: mostrar 0.8s forwards;
+}
+
+@keyframes mostrar {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 .contato-bg {
@@ -25,7 +35,6 @@
   max-width: 1200px;
   margin: 0 auto;
   justify-content: center;
-  /* align-items: center; */
 }
 
 .resposta {
@@ -173,6 +182,12 @@ textarea:focus {
 @media (max-width: 900px) {
   .teste {
     grid-template-columns: 1fr;
+  }
+  .contato {
+    border-radius: 4px 4px 0px 0px;
+  }
+  .contato-formulario {
+    border-radius: 0px 0px 4px 4px;
   }
 }
 
