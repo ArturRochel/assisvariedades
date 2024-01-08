@@ -4,7 +4,6 @@ const ativar = "animado";
 
 function animar() {
   const scrollY = window.scrollY + (window.innerHeight * 3) / 4;
-  console.log(scrollY);
   target.forEach(function (e) {
     if (scrollY > e.offsetTop) {
       e.classList.add(ativar);

@@ -16,8 +16,7 @@
 
 .contato-bg {
   background-color: #111;
-  padding: 40px 0px;
-  /* box-shadow: inset 0px -50px 0px yellow; */
+  padding: 40px 0px 80px 0px;
 }
 
 .teste {
@@ -61,6 +60,10 @@ i {
   flex: 1;
   gap: 10px;
   padding: 60px;
+}
+
+.contato-item:last-child {
+  padding-bottom: 40px;
 }
 
 .contato-user {
@@ -108,13 +111,17 @@ i {
 }
 
 input {
-  padding: 8px;
+  padding: 12px;
   /* border-radius: 4px; */
   outline: none;
   font: 400 1rem/1.2 "Roboto", sans-serif;
   border: 2px solid #ccc;
   border-radius: 4px;
   box-sizing: border-box;
+}
+
+input::placeholder {
+  font-size: 1.2rem;
 }
 
 input:focus {
@@ -124,10 +131,20 @@ input:focus {
 select,
 textarea {
   font: 400 1rem/1.2 "Roboto", sans-serif;
-  padding: 8px;
+  padding: 12px;
   outline: none;
   border: 2px solid #ccc;
   border-radius: 4px;
+}
+
+select {
+  font-size: 1.2rem;
+  padding: 9px;
+  color: rgba(0, 0, 0, 0.6);
+}
+
+textarea::placeholder {
+  font-size: 1.2rem;
 }
 
 select:focus,
@@ -156,5 +173,23 @@ textarea:focus {
 @media (max-width: 900px) {
   .teste {
     grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 800px) {
+  .contato-item {
+    padding: 40px;
+  }
+  .contact-form {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 600px) {
+  .contato-item {
+    padding: 20px;
+  }
+  .contact-form {
+    padding: 40px;
   }
 }

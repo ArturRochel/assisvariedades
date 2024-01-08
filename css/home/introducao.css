@@ -151,3 +151,10 @@
     width: 30ch;
   }
 }
+
+@media (max-width: 400px) {
+  .introducao {
+    margin: 20px;
+    padding: 20px;
+  }
+}

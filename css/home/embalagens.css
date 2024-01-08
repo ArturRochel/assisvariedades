@@ -104,3 +104,19 @@
     justify-content: center;
   }
 }
+
+@media (max-width: 400px) {
+  .embalagens-itens {
+    gap: 10px;
+  }
+  .embalagens-itemm {
+    width: 140px;
+  }
+  .embalagens-item img {
+    max-width: 100px;
+    max-height: 120px;
+  }
+  .embalagens-item {
+    padding: 0px;
+  }
+}
