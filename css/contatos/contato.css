@@ -16,9 +16,8 @@
 
 .contato-bg {
   background-color: #111;
+  padding: 40px 0px;
   /* box-shadow: inset 0px -50px 0px yellow; */
-  height: 1200px;
-  border-radius: 4px;
 }
 
 .teste {
@@ -30,16 +29,26 @@
   /* align-items: center; */
 }
 
+.resposta {
+  color: #b2b2b2;
+}
+
 .contato {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
   background-color: #000;
   color: #ccc;
+  border-radius: 4px 0px 0px 4px;
 }
 
 i {
-  color: yellow;
+  color: #ffbf00;
+  margin-right: 10px;
+}
+
+.white {
+  color: white;
 }
 
 .contato h2 {
@@ -50,7 +59,7 @@ i {
   flex-direction: column;
   flex-wrap: wrap;
   flex: 1;
-  gap: 20px;
+  gap: 10px;
   padding: 60px;
 }
 
@@ -68,6 +77,7 @@ i {
 
 .contato-formulario {
   background-color: #fff;
+  border-radius: 0px 4px 4px 0px;
 }
 
 .contato-formulario h2 {
@@ -123,4 +133,28 @@ textarea {
 select:focus,
 textarea:focus {
   border: 2px solid #ffbb00;
+}
+
+.enviar {
+  grid-column: 1/ -1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.enviar input {
+  padding: 20px 15px;
+  border: none;
+  border-radius: 8px;
+  width: 150px;
+  background: linear-gradient(#ffbf00, #f2a50c);
+  font: 600 1.25rem/1.2 "Poppins", sans-serif;
+  cursor: pointer;
+}
+
+@media (max-width: 900px) {
+  .teste {
+    grid-template-columns: 1fr;
+  }
 }

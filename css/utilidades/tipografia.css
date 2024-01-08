@@ -41,6 +41,10 @@
   font: 600 2rem/1.2 "Open Sans", sans-serif;
 }
 
+.font-3-xxl {
+  font: 600 4rem/1.125 "Poppins", sans-serif;
+}
+
 .font-3-xl {
   font: 600 1.75rem/1.5 "Poppins", sans-serif;
 }
@@ -57,4 +61,8 @@
 .font-3-s-d {
   font: 600 1.25rem/1.2 "Poppins", sans-serif;
   color: #2f312b;
+}
+
+.font-span {
+  font: 600 1rem/1 "Open Sans", sans-serif;
 }
