@@ -57,42 +57,96 @@
     </div>
 
     <article class="contato-bg" aria-label="Contatos">
-        <div class="contato">
-            <div class="contato-item">
-                <div class="contato-user">
-                    <i class="fa-solid fa-user-large"></i>
-                    <h2>Assis</h2>
+        <div class="teste">
+            <div class="contato">
+                <h2>Contatos</h2>
+                <div class="contato-item">
+                    <div class="contato-user">
+                        <i class="fa-solid fa-user-large"></i>
+                        <h3>Assis - CEO</h2>
+                    </div>
+                    <a href="tel:84994313624">
+                        <i class="fa-solid fa-phone-volume"></i>
+                        <span>(84) 99431-3624</span>
+                    </a>
+                    <a href="https://wa.me/+5584994313624?text=Ol%C3%A1%2C%20gostaria%20de%20realizar%20um%20or%C3%A7amento%20na%20Assis%20Variedades!">
+                        <i class="fa-brands fa-whatsapp"></i>
+                        <span>(84) 99431-3624</span>
+                    </a>
+                    <a href="mailto:fanassis01@gmail.com">
+                        <i class="fa-solid fa-envelope"></i>
+                        <span>fanassis01@gmail.com</span>
+                    </a>
                 </div>
-                <a href="tel:84994313624">
-                    <i class="fa-solid fa-phone-volume"></i>
-                    <span>(84) 99431-3624</span>
-                </a>
-                <a href="https://wa.me/+5584994313624?text=Ol%C3%A1%2C%20gostaria%20de%20realizar%20um%20or%C3%A7amento%20na%20Assis%20Variedades!">
-                    <i class="fa-brands fa-whatsapp"></i>
-                    <span>(84) 99431-3624</span>
-                </a>
-                <a href="mailto:fanassis01@gmail.com">
-                    <i class="fa-solid fa-envelope"></i>
-                    <span>fanassis01@gmail.com</span>
-                </a>
+                <div class="contato-item">
+                    <div class="contato-user">
+                        <i class="fa-solid fa-user-large"></i>
+                        <h3>Roziane - Gerente</h2>
+                    </div>
+                    <a href="tel:84988196290">
+                        <i class="fa-solid fa-phone-volume"></i>
+                        <span>(84) 98819-6290</span>
+                    </a>
+                    <a href="https://wa.me/+5584988196290?text=Ol%C3%A1%2C%20gostaria%20de%20realizar%20um%20or%C3%A7amento%20na%20Assis%20Variedades!">
+                        <i class="fa-brands fa-whatsapp"></i>
+                        <span>(84) 98819-6290</span>
+                    </a>
+                    <a href="mailto:rosinha2621@gmail.com">
+                        <i class="fa-solid fa-envelope"></i>
+                        <span>rosinha2621@gmail.com</span>
+                    </a>
+                </div>
+                <div class="contato-item">
+                    <div class="contato-user">
+                        <i class="fa-solid fa-user-large"></i>
+                        <h3>Artur - Desenvolvedor</h2>
+                    </div>
+                    <a href="tel:84986355418">
+                        <i class="fa-solid fa-phone-volume"></i>
+                        <span>(84) 98635-5418</span>
+                    </a>
+                    <a href="https://wa.me/+5584986355418?text=Ol%C3%A1%20Artur%2C%20gostaria%20de%20desenvolver%20um%20site.">
+                        <i class="fa-brands fa-whatsapp"></i>
+                        <span>(84) 98635-5418</span>
+                    </a>
+                    <a href="mailto:arturrochel@gmail.com">
+                        <i class="fa-solid fa-envelope"></i>
+                        <span>arturrochel@gmail.com</span>
+                    </a>
+                </div>
             </div>
-            <div class="contato-item">
-                <div class="contato-user">
-                    <i class="fa-solid fa-user-large"></i>
-                    <h2>Roziane</h2>
-                </div>
-                <a href="tel:84988196290">
-                    <i class="fa-solid fa-phone-volume"></i>
-                    <span>(84) 98819-6290</span>
-                </a>
-                <a href="https://wa.me/+5584988196290?text=Ol%C3%A1%2C%20gostaria%20de%20realizar%20um%20or%C3%A7amento%20na%20Assis%20Variedades!">
-                    <i class="fa-brands fa-whatsapp"></i>
-                    <span>(84) 98819-6290</span>
-                </a>
-                <a href="mailto:rosinha2621@gmail.com">
-                    <i class="fa-solid fa-envelope"></i>
-                    <span>rosinha2621@gmail.com</span>
-                </a>
+            <!-- FORMULÁRIO DE CONTATO -->
+            <div class="contato-formulario" aria-label="Formulário de Contato">
+                <h2>Realize seu contato aqui</h2>
+                <form class="contact-form" action="./contato.html">
+                    <div class="form">
+                        <label class="font-3-s" for="nome">Nome</label>
+                        <input type="text" id="nome" name="nome" placeholder="Primeiro Nome">
+                    </div>
+                    <div class="form">
+                        <label class="font-3-s" for="sobrenome">Sobrenome</label>
+                        <input type="text" id="sobrenome" name="sobrenome" placeholder="Sobrenome">
+                    </div>
+                    <div class="form email">
+                        <label class="font-3-s" for="email">E-mail</label>
+                        <input type="email" id="email" name="email" placeholder="contato@email.com" required>
+                    </div>
+                    <div class="form">
+                        <label class="font-3-s" for="telefone">Telefone</label>
+                        <input type="text" id="telefone" name="telefone" placeholder="(84) 99999-9999">
+                    </div>
+                    <div class="form">
+                        <label class="font-3-s" for="produtos">Serviço:</label>
+                        <select name="produtos" id="prdoutos">
+                            <option value="orçamento">Realizar um orçamento</option>
+                            <option value="site">Desenvolver um site</option>
+                            <option value="duvida">Dúvidas</option>
+                        </select>
+                    </div>
+                    <div class="form texto">
+                        <textarea name="texto" id="texto" cols="30" rows="10" placeholder="Escreva aqui sua mensagem :)"></textarea>
+                    </div>
+                </form>
             </div>
         </div>
     </article>

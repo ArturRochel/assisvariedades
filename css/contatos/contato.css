@@ -17,18 +17,34 @@
 .contato-bg {
   background-color: #111;
   /* box-shadow: inset 0px -50px 0px yellow; */
-  margin: 0 auto;
   height: 1200px;
+  border-radius: 4px;
+}
+
+.teste {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  max-width: 1200px;
+  margin: 0 auto;
+  justify-content: center;
+  /* align-items: center; */
 }
 
 .contato {
   display: flex;
   flex-wrap: wrap;
-  max-width: 1200px;
-  margin: 0 auto;
-  background-color: red;
+  flex-direction: column;
+  background-color: #000;
+  color: #ccc;
 }
 
+i {
+  color: yellow;
+}
+
+.contato h2 {
+  margin: 40px 0px 0px 60px;
+}
 .contato-item {
   display: flex;
   flex-direction: column;
@@ -48,4 +64,63 @@
   display: block;
   width: max-content;
   padding: 10px;
+}
+
+.contato-formulario {
+  background-color: #fff;
+}
+
+.contato-formulario h2 {
+  margin: 40px 0px 0px 60px;
+}
+
+.contact-form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 60px;
+  gap: 20px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  flex: 1;
+  gap: 8px;
+}
+
+.email {
+  grid-column: 1/ -1;
+}
+
+.texto {
+  grid-column: 1/ -1;
+}
+
+input {
+  padding: 8px;
+  /* border-radius: 4px; */
+  outline: none;
+  font: 400 1rem/1.2 "Roboto", sans-serif;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input:focus {
+  border: 2px solid #ffbb00;
+}
+
+select,
+textarea {
+  font: 400 1rem/1.2 "Roboto", sans-serif;
+  padding: 8px;
+  outline: none;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+}
+
+select:focus,
+textarea:focus {
+  border: 2px solid #ffbb00;
 }
