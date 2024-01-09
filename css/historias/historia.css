@@ -1,42 +1,38 @@
 .historia-bg {
   background-color: #f7f7f7;
-  padding: 40px 0px 80px 0px;
   max-width: 1400px;
   margin: 0 auto;
   border-radius: 8px;
   box-shadow: 4px 4px 10px black;
   margin-bottom: 100px;
+  box-sizing: border-box;
 }
 
-.titulo {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  flex: 1;
-  gap: 20px;
+.tittle {
   max-width: 1200px;
-  margin: 0 auto;
-  margin-bottom: 40px;
-  animation: mostrar 0.8s forwards;
-}
-
-@keyframes mostrar {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
+  margin-left: 40px;
+  color: #747474;
+  text-shadow: 1px 1px 2px black;
 }
 
 .historia {
   padding: 40px;
   color: #111;
+  animation: historia 0.8s forwards;
+}
+
+@keyframes historia {
+  from {
+    filter: blur(12px);
+  }
+  to {
+    filter: blur(0px);
+  }
 }
 
 .historia-text {
   max-width: 150ch;
-  padding: 0px 40px;
+  padding: 40px;
   text-align: justify;
 }
 
@@ -44,13 +40,26 @@
   visibility: hidden;
 }
 
-@media (max-width: 600px) {
-  .titulo-bg {
-    padding: 20px;
-    padding-bottom: 0px;
+@media (max-width: 1000px) {
+  .historia-text {
+    max-width: 120ch;
   }
-  .titulo {
-    gap: 10px;
-    margin-bottom: 0px;
+}
+
+@media (max-width: 800px) {
+  .historia-text {
+    max-width: 100ch;
+    font-size: 1.25rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .tittle {
+    font-size: 1.5rem;
+    margin-left: 20px;
+  }
+  .historia-text {
+    padding: 20px 10px 10px 10px;
+    word-spacing: 5px;
   }
 }
