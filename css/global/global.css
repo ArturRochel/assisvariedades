@@ -9,7 +9,7 @@ html {
 body {
   margin: 0px;
   font-family: Arial, Helvetica, sans-serif;
-  overflow-x: hidden;
+  overflow-x: hidden !important;
   /* margin-bottom: 600px; */
 }
 

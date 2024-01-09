@@ -43,3 +43,14 @@
 .historia-text span {
   visibility: hidden;
 }
+
+@media (max-width: 600px) {
+  .titulo-bg {
+    padding: 20px;
+    padding-bottom: 0px;
+  }
+  .titulo {
+    gap: 10px;
+    margin-bottom: 0px;
+  }
+}

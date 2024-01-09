@@ -1,3 +1,7 @@
+#contato {
+  overflow-x: hidden;
+}
+
 .titulo-bg {
   background-color: #111;
   color: #fff;
@@ -18,9 +22,11 @@
 @keyframes mostrar {
   from {
     opacity: 0;
+    filter: blur(12px);
   }
   to {
     opacity: 1;
+    filter: blur(0px);
   }
 }
 
@@ -48,6 +54,20 @@
   background-color: #000;
   color: #ccc;
   border-radius: 4px 0px 0px 4px;
+  animation: contato 0.9s forwards;
+}
+
+@keyframes contato {
+  from {
+    opacity: 0;
+    filter: blur(12px);
+    transform: translateX(-100px);
+  }
+  to {
+    opacity: 1;
+    filter: blur(0px);
+    transform: translateX(0px);
+  }
 }
 
 i {
@@ -90,6 +110,20 @@ i {
 .contato-formulario {
   background-color: #fff;
   border-radius: 0px 4px 4px 0px;
+  animation: contato-formulario 0.9s forwards;
+}
+
+@keyframes contato-formulario {
+  from {
+    opacity: 0;
+    filter: blur(12px);
+    transform: translateX(100px);
+  }
+  to {
+    opacity: 1;
+    filter: blur(0px);
+    transform: translateX(0px);
+  }
 }
 
 .contato-formulario h2 {
@@ -188,6 +222,7 @@ textarea:focus {
   }
   .contato-formulario {
     border-radius: 0px 0px 4px 4px;
+    animation: none;
   }
 }
 
@@ -201,10 +236,23 @@ textarea:focus {
 }
 
 @media (max-width: 600px) {
+  .titulo h1 {
+    font-size: 3rem;
+  }
+  .contato {
+    padding-left: 30px;
+  }
   .contato-item {
     padding: 20px;
   }
+  .contato-formulario h2 {
+    margin: 0px;
+    margin-top: 20px;
+    margin-left: 20px;
+  }
   .contact-form {
+    justify-content: center;
+    align-items: center;
     padding: 40px;
   }
 }

@@ -38,6 +38,18 @@
   text-align: center;
   box-shadow: 1px 1px 5px #c5c7c1;
   transition: 0.3s;
+  animation: produtos-itens 0.9s forwards;
+}
+
+@keyframes produtos-itens {
+  from {
+    opacity: 0;
+    filter: blur(12px);
+  }
+  to {
+    opacity: 1;
+    filter: blur(0px);
+  }
 }
 
 .produtos-itens img {
