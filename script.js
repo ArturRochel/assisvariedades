@@ -35,3 +35,18 @@ function toggleMenu() {
 }
 
 hamburguer.addEventListener("click", toggleMenu);
+
+// PERGUNTAS FREQUENTES
+const perguntas = document.querySelectorAll("dt");
+const active = "ativo";
+perguntas[0].classList.add(active);
+perguntas[0].nextElementSibling.classList.add(active);
+
+function clicado(e) {
+  e.currentTarget.classList.toggle(active);
+  e.currentTarget.nextElementSibling.classList.toggle(active);
+}
+
+perguntas.forEach((pergunta) => {
+  pergunta.addEventListener("click", clicado);
+});

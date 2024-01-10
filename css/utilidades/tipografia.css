@@ -66,3 +66,7 @@
 .font-span {
   font: 600 1rem/1 "Open Sans", sans-serif;
 }
+
+.font-2-s {
+  font: 600 1rem/1.2 "Open Sans", sans-serif;
+}
