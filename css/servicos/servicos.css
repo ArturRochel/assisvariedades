@@ -1,3 +1,87 @@
+.servicos-bg {
+  max-width: 1200px;
+  margin: 0 auto;
+  background-color: #f5f5f5;
+  border-radius: 4px;
+  padding: 10px;
+  margin-bottom: 100px;
+}
+
+.servicos-bg h1 {
+  margin: 20px 0px 0px 30px;
+  color: #636363;
+  text-shadow: 2px 2px 3px black;
+}
+
+.servicos {
+  display: grid;
+  grid-template-columns: 1fr 500px;
+  align-items: center;
+}
+
+.servicos-item {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 30px;
+  padding: 40px;
+}
+
+.item-ser {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 10px;
+  border: 2px solid #1c1c1c;
+  border-radius: 6px;
+  padding: 20px;
+  box-shadow: 2px 2px 5px #c7c7c7;
+}
+
+.item-ser h2 {
+  font-size: 2.5rem;
+  text-shadow: 2px 2px 1px #636363;
+}
+
+.item-ser p {
+  font-size: 1.25rem;
+}
+
+.item-plus {
+  display: flex;
+  flex-wrap: wrap;
+  flex: 1;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.item-plus span {
+  display: flex;
+  background: linear-gradient(#ffec64, #ffab23c5);
+  align-items: center;
+  padding: 6px;
+  gap: 5px;
+  border-radius: 12px;
+  width: max-content;
+}
+
+.black {
+  color: black;
+}
+
+.item-plus img {
+  max-width: 25px;
+}
+
+.servicos-image {
+  padding: 40px;
+}
+
+.servicos-image img {
+  border-radius: 8px;
+  box-shadow: 2px 3px 5px black;
+}
+
 .perguntas-bg {
   max-width: 1000px;
   margin: 0 auto;
@@ -27,6 +111,7 @@
   box-sizing: border-box;
   background-color: #dfdbdbbd;
   border-radius: 6px;
+  border: 1px solid #c1c1c1;
 }
 
 .faq-pergunta img {
@@ -60,5 +145,42 @@
   }
   to {
     opacity: 1;
+  }
+}
+
+@media (max-width: 1000px) {
+  .servicos-image {
+    display: none;
+  }
+  .servicos {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 600px) {
+  .servicos-bg h1 {
+    font-size: 2.5rem;
+  }
+  .item-ser h2 {
+    font-size: 2rem;
+  }
+  .item-ser p {
+    font-size: 1.15rem;
+  }
+  .item-plus p {
+    font-size: 0.9rem;
+  }
+  .servicos-item {
+    padding: 20px;
+  }
+  .perguntas-bg {
+    padding: 25px;
+  }
+  .perguntas-bg h1 {
+    font-size: 3.25rem;
+  }
+  .faq-pergunta h2 {
+    font-size: 1.15rem;
+    text-shadow: 1px 1px 2px white;
   }
 }

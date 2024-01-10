@@ -8,7 +8,10 @@
     <meta name="description" content="Produtos descartáveis, de embalagem e supermercado, é aqui na Assis Variedades.">
     <link rel="shortcut icon" type="image/png" href="./img/logo/favicon.png">
 
-    <link rel="preload" href="./css/style.css" as="style">
+    <link rel="preload" href="css/style.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+    <noscript>
+        <link rel="stylesheet" href="css/style.css">
+    </noscript>
     <link rel="stylesheet" href="./css/style.css">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -23,7 +26,7 @@
         <nav>
             <ul class="header font-1-m-b">
                 <li class="header-item"><a class="botao" href="./historia.html">História</a></li>
-                <li class="header-item"><a class="botao" href="./servicos.html">Serviços</a></li>
+                <li class="header-item"><a class="botao" href="./produtos.html">Produtos</a></li>
                 <div class="logo">
                     <a href="./"><img src="./img/logo/logo-horizontal.jpg" alt="Assis Variedades"></a>
                 </div>
@@ -32,13 +35,13 @@
                     <div class="line2"></div>
                     <div class="line3"></div>
                 </div>
-                <li class="header-item"><a class="botao" href="./produtos.html">Produtos</a></li>
+                <li class="header-item"><a class="botao" href="./servicos.html">Serviços</a></li>
                 <li class="header-item"><a class="botao" href="./contato.html">Contato</a></li>
             </ul>
             <ul id="header-responsivo" class="header-responsivo font-1-m-b">
                 <li class="header-res"><a class="botao" href="./historia.html">História</a></li>
-                <li class="header-res"><a class="botao" href="./servicos.html">Serviços</a></li>
                 <li class="header-res"><a class="botao" href="./produtos.html">Produtos</a></li>
+                <li class="header-res"><a class="botao" href="./servicos.html">Serviços</a></li>
                 <li class="header-res"><a class="botao" href="./contato.html">Contato</a></li>
                 <div>
                     <div class="redes font-3-s">
@@ -48,6 +51,86 @@
             </ul>
         </nav>
     </header>
+
+    <article aria-label="Serviços">
+        <div class="servicos-bg">
+            <h1 class="font-1-xxl">Principais Serviços</h1>
+            <div class="servicos">
+                <div class="servicos-item">
+                    <div class="item-ser">
+                        <h2 class="font-3-xxl">Padaria</h2>
+                        <p class="font-1-xxl">Dispomos de produtos para padaria como formas de bolo, sacolas para pães, embalagens para bolachas, pães de queijo, além de diversos outros ítens necessários no dia a dia de qualquer padaria.</p>
+                        <div class="item-plus">
+                            <span>
+                                <p class="font-3-s black">Embalagens</p>
+                                <img src="./img/icons/eco-packaging.png" alt="">
+                            </span>
+                            <span>
+                                <p class="font-3-s black">Luvas</p>
+                                <img src="./img/icons/luvas.png" alt="">
+                            </span>
+                            <span>
+                                <p class="font-3-s black">Toucas</p>
+                                <img src="./img/icons/touca-de-banho.png" alt="">
+                            </span>
+                            <span>
+                                <p class="font-3-s black">Sacolas</p>
+                                <img src="./img/icons/sacola.png" alt="">
+                            </span>
+                        </div>
+                    </div>
+                    <div class="item-ser">
+                        <h2 class="font-3-xxl">Supermercado</h2>
+                        <p class="font-1-xxl">Nosso catálogo conta com as principais marcas e produtos vendidos nos supermercados locais. Temos o compromisso de atender as expectativas dos nossos clientes e propor as mercadorias que irão prpoporcionar o maior fluxo de vendas.</p>
+                        <div class="item-plus">
+                            <span>
+                                <p class="font-3-s black">Doces</p>
+                                <img src="./img/icons/doces.png" alt="">
+                            </span>
+                            <span>
+                                <p class="font-3-s black">Pipocas</p>
+                                <img src="./img/icons/salgadinhos.png" alt="">
+                            </span>
+                            <span>
+                                <p class="font-3-s black">Toucas</p>
+                                <img src="./img/icons/touca-de-banho.png" alt="">
+                            </span>
+                            <span>
+                                <p class="font-3-s black">Sacolas</p>
+                                <img src="./img/icons/sacola.png" alt="">
+                            </span>
+                        </div>
+                    </div>
+                    <div class="item-ser">
+                        <h2 class="font-3-xxl">Conveniência</h2>
+                        <p class="font-1-xxl">A conveniência Assis Variedades dispõe de ítens de limpeza, alimentação e utilidades. Com preços acessíveis e facilidades, através dos nossos canais de contato você pode consultar a disponibilidade e preços dos produtos de seu interesse.</p>
+                        <div class="item-plus">
+                            <span>
+                                <p class="font-3-s black">Pipocas</p>
+                                <img src="./img/icons/salgadinhos.png" alt="">
+                            </span>
+                            <span>
+                                <p class="font-3-s black">Refrigerante</p>
+                                <img src="./img/icons/refrigerantes.png" alt="">
+                            </span>
+                            <span>
+                                <p class="font-3-s black">Limpeza</p>
+                                <img src="./img/icons/liquido-de-limpeza.png" alt="">
+                            </span>
+                            <span>
+                                <p class="font-3-s black">Enlatados</p>
+                                <img src="./img/icons/sacola.png" alt="">
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="servicos-image">
+                    <img src="./img/imagens/supermarket-menor.jpg" alt="">
+                </div>
+            </div>
+        </div>
+        </div>
+    </article>
 
     <article aria-label="Perguntas Frequentes">
         <div class="perguntas-bg">
