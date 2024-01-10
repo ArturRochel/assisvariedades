@@ -5,6 +5,18 @@
   border-radius: 4px;
   padding: 10px;
   margin-bottom: 100px;
+  animation: servicos 0.6s forwards;
+}
+
+@keyframes servicos {
+  from {
+    opacity: 0;
+    filter: blur(12px);
+  }
+  to {
+    opacity: 1;
+    filter: blur(0px);
+  }
 }
 
 .servicos-bg h1 {
@@ -41,6 +53,19 @@
 .item-ser h2 {
   font-size: 2.5rem;
   text-shadow: 2px 2px 1px #636363;
+  position: relative;
+}
+
+.item-ser h2:after {
+  position: absolute;
+  content: "";
+  display: block;
+  width: 10px;
+  height: 10px;
+  top: -5px;
+  right: -5px;
+  background: linear-gradient(#ffec64, #ffab23c5);
+  border-radius: 50%;
 }
 
 .item-ser p {
@@ -114,6 +139,31 @@
   border: 1px solid #c1c1c1;
 }
 
+.faq-pergunta h2 {
+  font-size: 1.5rem;
+  text-shadow: 1px 1px 1px #fff;
+  color: black;
+  position: relative;
+  margin-left: 20px;
+}
+
+.faq-pergunta h2:before {
+  position: absolute;
+  display: block;
+  content: "";
+  background: #c20005;
+  width: 10px;
+  height: 10px;
+  top: 9px;
+  left: -18px;
+  border-radius: 50%;
+  transition: 0.3s;
+}
+
+.faq-pergunta.ativo h2:before {
+  background: #409400;
+}
+
 .faq-pergunta img {
   width: 18px;
   transform: rotate(-90deg);
@@ -158,8 +208,13 @@
 }
 
 @media (max-width: 600px) {
+  .servicos-bg {
+    margin-bottom: 0px;
+    padding-bottom: 60px;
+  }
   .servicos-bg h1 {
-    font-size: 2.5rem;
+    font-size: 2.6rem;
+    margin: 20px 0px 0px 15px;
   }
   .item-ser h2 {
     font-size: 2rem;
@@ -182,5 +237,17 @@
   .faq-pergunta h2 {
     font-size: 1.15rem;
     text-shadow: 1px 1px 2px white;
+  }
+  .faq-pergunta h2:before {
+    position: absolute;
+    display: block;
+    content: "";
+    background: #c20005;
+    width: 8px;
+    height: 8px;
+    top: 7px;
+    left: -18px;
+    border-radius: 50%;
+    transition: 0.3s;
   }
 }
